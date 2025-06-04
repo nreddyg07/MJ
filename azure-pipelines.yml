@@ -10,9 +10,9 @@ pool:
   name:Default
 
 steps:
--script: echo Myfirst azure pipelinefor maven project
- displayName:'Run a one-line script'
--script:mvn clean install
- displayName:'Build with maven'
--script:java -jar target/mavenjenkins-1.0-SNAPSHOT.jar
- displayName:'Running jar'
+- script: echo Myfirst azure pipelinefor maven project
+  displayName: 'Run a one-line script'
+- script: mvn clean install
+  displayName: 'Build with maven'
+- script: java -jar target/mavenjenkins-1.0-SNAPSHOT.jar
+  displayName: 'Running jar'
